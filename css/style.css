@@ -28,7 +28,8 @@ button {
     float: left;
     padding: 5px;
     width: 96px;
-    border: 2px solid black;
+    border: 2px solid white;
+    background: linear-gradient(to bottom, rgb(153, 43, 255), rgb(101, 21, 177));
     border-radius: 4px;
     margin-right: 4px;
     position: relative;
@@ -37,9 +38,10 @@ button {
 }
 
 .disc {
+    animation: is-rotating 1s infinite;
     border: 2px solid white;
     border-radius: 50%;
-    background-color: black;
+    background: linear-gradient(45deg, rgb(172, 83, 255), rgb(101, 21, 177));
     height: 90px;
     width: 90px;
     margin: 0;
@@ -47,3 +49,9 @@ button {
     top: 10%;
     left: 33%
 }
+
+@keyframes is-rotating {
+    to {
+      transform: rotate(1turn);
+    }
+  }
