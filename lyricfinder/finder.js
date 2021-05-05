@@ -100,4 +100,11 @@ const handleSongsContainerClick = event => {
 }
 
 //evento de click
+        prevAndNextContainer.innerHTML = ''
+
+        fetchLyrics(artist, songTitle)
+    }
+}
+
+//evento de click
 songsContainer.addEventListener('click', handleSongsContainerClick)
