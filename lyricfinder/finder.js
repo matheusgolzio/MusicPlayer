@@ -92,9 +92,7 @@ const handleSongsContainerClick = event => {
     if (clickedElement.tagName === 'BUTTON') {
         const artist = clickedElement.getAttribute('data-artist') //artist; "led zeppelin"
         const songTitle = clickedElement.getAttribute('data-song-title')
-        // const preview = clickedElement.getAttribute('audio')
-
-        // remover botão prev e next quando a letra da música for clicada
+     
         prevAndNextContainer.innerHTML = ''
 
         fetchLyrics(artist, songTitle)
