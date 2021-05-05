@@ -33,7 +33,7 @@ button {
     border-radius: 4px;
     margin-right: 4px;
     position: relative;
-    top: 20%;
+    top: 30%;
     cursor: pointer;
 }
 
@@ -47,7 +47,7 @@ button {
     margin: 0;
     position: relative;
     top: 10%;
-    left: 33%
+    left: 33%;
 }
 
 @keyframes is-rotating {
@@ -55,3 +55,8 @@ button {
       transform: rotate(1turn);
     }
   }
+
+input[type="file"] {
+    position: relative;
+    top: 10%;
+}
