@@ -63,3 +63,17 @@ input[type="text"] {
     padding: 4px;
     width: 240px;
 }
+
+.ok {
+    padding: 5px;
+    width: 96px;
+    border: 2px solid white;
+    background: linear-gradient(to bottom, rgb(153, 43, 255), rgb(101, 21, 177));
+    border-radius: 4px;
+    margin-right: 4px;
+    position: relative;
+    top: 10%;
+    left: 3%;
+    color: black;
+    cursor: pointer;
+}

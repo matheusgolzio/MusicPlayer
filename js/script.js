@@ -1,15 +1,14 @@
-var path = document.getElementById("path").value
-var music = new Audio(path)
+function ok() {
+    path = document.getElementById('source').value
+    music = new Audio(path)
+}
 
 function play_music() {
-    music.play();
-    document.getElementById("status").innerHTML = path
+    music = new Audio(path)
+    document.getElementById('status').innerHTML = path
+    music.play()
 }
 
 function pause_music() {
     music.pause()
-}
-
-function stop_music() {
-    music.stop()
 }
