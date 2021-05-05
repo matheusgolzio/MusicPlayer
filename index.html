@@ -16,17 +16,20 @@
     <div class="box">
         <h1>Music Player</h1>
 
-        Playing - <span>Nothing</span><br>
+        Playing - <span id="status">Nothing</span><br>
 
         <div class="disc">
             |
         </div>
 
-        <button>Pause</button>
-        <button>Play</button>
-        <button>Stop</button><br>
+        <button onmouseup=pause_music()>Pause</button>
+        <button onmouseup=play_music()>Play</button>
 
-        <input type="file">
+        <input type="text" id="path" placeholder="Digite o local da música no dispositivo"/>
     </div>
+
+
+
+    <script src="js/script.js"></script>
 </body>
 </html>

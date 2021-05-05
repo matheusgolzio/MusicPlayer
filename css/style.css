@@ -34,6 +34,7 @@ button {
     margin-right: 4px;
     position: relative;
     top: 30%;
+    left: 16%;
     cursor: pointer;
 }
 
@@ -56,7 +57,9 @@ button {
     }
   }
 
-input[type="file"] {
+input[type="text"] {
     position: relative;
     top: 10%;
+    padding: 4px;
+    width: 240px;
 }
