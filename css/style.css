@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    background-color:blueviolet;
+}
+
+.box {
+    width: 300px;
+    height: 300px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    padding: 7px;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.link {
+    position: relative;
+    top:26%;
+    color: white;
+}
+
+button {
+    float: left;
+    padding: 5px;
+    width: 96px;
+    border: 2px solid white;
+    background: linear-gradient(to bottom, rgb(153, 43, 255), rgb(101, 21, 177));
+    border-radius: 4px;
+    margin-right: 4px;
+    position: relative;
+    top: 30%;
+    left: 16%;
+    cursor: pointer;
+}
+
+.disc {
+    animation: is-rotating 1s infinite;
+    border: 2px solid white;
+    border-radius: 50%;
+    background: linear-gradient(45deg, rgb(172, 83, 255), rgb(101, 21, 177));
+    height: 90px;
+    width: 90px;
+    margin: 0;
+    position: relative;
+    top: 10%;
+    left: 33%;
+}
+
+@keyframes is-rotating {
+    to {
+      transform: rotate(1turn);
+    }
+  }
+
+input[type="text"] {
+    position: relative;
+    top: 10%;
+    padding: 4px;
+    width: 240px;
+}
+
+.ok {
+    padding: 5px;
+    width: 96px;
+    border: 2px solid white;
+    background: linear-gradient(to bottom, rgb(153, 43, 255), rgb(101, 21, 177));
+    border-radius: 4px;
+    margin-right: 4px;
+    position: relative;
+    top: 10%;
+    left: 3%;
+    color: black;
+    cursor: pointer;
+}
