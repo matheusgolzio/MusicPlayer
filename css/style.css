@@ -1,4 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Prompt");
+
+:root {
+    --primary-color: rgb(67, 12, 98);
+    --secondary-color: rgb(84, 25, 133);
+    --darkblue-color: rgb(49, 16, 99);
+    --lightblue-color: rgb(99, 129, 228);
+}
 
 * {
     padding: 0;
@@ -6,81 +14,231 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-    color: white;
-    background-color:blueviolet;
+    font-family: "Roboto";
+
+    background: rgb(103, 13, 163);
+    background: -moz-linear-gradient(90deg, rgba(52, 10, 110), rgb(64, 9, 100), rgb(67, 12, 98));
+    background: -webkit-linear-gradient(90deg, rgba(52, 10, 110), rgb(64, 9, 100), rgb(67, 12, 98));
+    background: linear-gradient(90deg, rgb(25, 3, 56), rgb(34, 3, 56), rgb(30, 4, 46));
 }
 
-.box {
-    width: 300px;
-    height: 300px;
-    background: rgba(255, 255, 255, 0.3);
-    border-radius: 5px;
-    padding: 7px;
+nav {
+    height: 2.75vh;
+    background: rgb(84, 25, 133);
+    background: -moz-radial-gradient(circle, rgba(84, 25, 133, 0.95) 0%, rgba(66, 17, 112, 0.9) 100%);
+    background: -webkit-radial-gradient(circle, rgba(84, 25, 133, 0.95) 0%, rgba(66, 17, 112, 0.9) 100%);
+    background: radial-gradient(circle, rgba(84, 25, 133, 0.95) 0%, rgba(66, 17, 112, 0.9) 100%);
+    padding: 20px;
+
+    border-radius: 0 0 30px 30px;
+
     text-align: center;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+
+    box-shadow: 0px 0px 0px var(--lightblue-color) inset, 0 0 40px 20px var(--darkblue-color);
 }
 
-.link {
-    position: relative;
-    top:26%;
-    color: white;
+.nav-title {
+    margin-left: 1.5em;
+    margin-right: 1.25vw;
+
+    font-family: "Prompt";
+    font-size: 1.35rem;
+    font-weight: bolder;
+    color: rgb(215, 204, 236);
+    text-decoration: none;
+
+    transition: color 200ms linear;
 }
 
-
-button {
-    float: left;
-    padding: 5px;
-    width: 96px;
-    border: 2px solid white;
-    background: linear-gradient(to bottom, rgb(153, 43, 255), rgb(101, 21, 177));
-    border-radius: 4px;
-    margin-right: 4px;
-    position: relative;
-    top: 30%;
-    left: 16%;
-    cursor: pointer;
+.nav-title:hover {
+    color: var(--darkblue-color);
 }
 
-.disc {
-    animation: is-rotating 1s infinite;
-    border: 2px solid white;
+.mp-box {
+    display: block;
+    margin: auto;
+
+    margin-top: 31vh;
+
+    width: 450px;
+    height: 450px;
+
+    background: rgb(85, 22, 136);
+    background: -moz-linear-gradient(
+        90deg,
+        rgba(85, 22, 136, 0.4) 0%,
+        rgba(74, 17, 145, 0.45) 50%,
+        rgba(94, 27, 156, 0.3) 100%
+    );
+    background: -webkit-linear-gradient(
+        90deg,
+        rgba(85, 22, 136, 0.4) 0%,
+        rgba(74, 17, 145, 0.45) 50%,
+        rgba(94, 27, 156, 0.3) 100%
+    );
+    background: linear-gradient(
+        90deg,
+        rgba(85, 22, 136, 0.4) 0%,
+        rgba(74, 17, 145, 0.45) 50%,
+        rgba(94, 27, 156, 0.3) 100%
+    );
+
+    border: 1px var(--darkblue-color) solid;
+    border-radius: 10px;
+
+    box-shadow: 0 0 35px 5px var(--darkblue-color), 0 0 55px 2px var(--darkblue-color),
+        inset 0 0 15px 5px var(--primary-color);
+
+    padding: 7px;
+
+    text-align: center;
+}
+
+#mp-title {
+    margin-top: 1vh;
+    margin-bottom: 2vh;
+
+    color: var(--lightblue-color);
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+#mp-title p {
+    color: rgb(215, 204, 236);
+    font-style: italic;
+}
+
+#mp-disc {
+    display: block;
+    margin: auto;
+
+    margin-top: 1.3vh;
+
+    border: 3px solid var(--lightblue-color);
     border-radius: 50%;
-    background: linear-gradient(45deg, rgb(172, 83, 255), rgb(101, 21, 177));
+
+    color: black;
+
+    background: rgb(85, 22, 136);
+    background: -moz-linear-gradient(
+        90deg,
+        rgba(85, 22, 136, 0.4) 0%,
+        rgba(74, 17, 145, 0.45) 50%,
+        rgba(94, 27, 156, 0.3) 100%
+    );
+    background: -webkit-linear-gradient(
+        90deg,
+        rgba(85, 22, 136, 0.4) 0%,
+        rgba(74, 17, 145, 0.45) 50%,
+        rgba(94, 27, 156, 0.3) 100%
+    );
+    background: linear-gradient(
+        90deg,
+        rgba(123, 27, 202, 0.6) 0%,
+        rgba(97, 6, 182, 0.65) 50%,
+        rgba(125, 34, 209, 0.6) 100%
+    );
+
     height: 90px;
     width: 90px;
-    margin: 0;
+
+    animation: is-rotating 1s infinite;
+}
+
+#mp-search-bar {
+    width: 250px;
+    height: 2.2vh;
+
+    margin-left: 3vw;
+    margin-top: 3.5vh;
+}
+
+#mp-search-music {
+    display: inline;
+    text-align: center;
+}
+
+#mp-ok {
+    padding: 5px 10px 5px 10px;
+    margin-left: 1vw;
+
+    background: inherit;
+
+    border: 3px var(--lightblue-color) solid;
+    border-radius: 7px;
+
+    box-shadow: 0px 0px 0px var(--lightblue-color) inset, 0 0 10px 2px var(--lightblue-color);
+
+    color: var(--lightblue-color);
+    font-size: 1.2rem;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: box-shadow 500ms ease;
+}
+
+#mp-ok:hover {
+    box-shadow: 0 0 10px 1px var(--lightblue-color) inset, 0 0 5px 2px var(--lightblue-color);
+}
+
+#mp-buttons {
+    margin-top: 4vh;
+
+    display: inline-block;
+    text-align: center;
+}
+
+.mp-button {
+    cursor: pointer;
+
+    margin-right: 1vw;
+    margin-left: 1vw;
+
+    padding-top: 1.35vh;
+
+    width: 140px;
+    height: 60px;
+
+    border: 3px var(--lightblue-color) solid;
+    border-radius: 7px;
+
+    background-color: inherit;
+
+    box-shadow: 0px 0px 0px var(--lightblue-color) inset, 0 0 10px 4px var(--lightblue-color);
+
+    color: var(--lightblue-color);
+    font-size: 1.3rem;
+    font-weight: bold;
+
+    transition: box-shadow 500ms ease;
+}
+
+.mp-button::after {
+    content: "";
+
     position: relative;
-    top: 10%;
-    left: 33%;
+    display: block;
+
+    margin-top: 2.2vh;
+
+    width: 132px;
+    height: 30px;
+
+    background-color: var(--lightblue-color);
+
+    transform: perspective(0.9em) rotateX(50deg) scale(1, 0.5);
+    filter: blur(0.75em);
+
+    opacity: 0.28;
+}
+
+.mp-button:hover {
+    box-shadow: 0 0 20px 5px var(--lightblue-color) inset, 0 0 10px 4px var(--lightblue-color);
 }
 
 @keyframes is-rotating {
     to {
-      transform: rotate(1turn);
+        transform: rotate(1turn);
     }
-  }
-
-input[type="text"] {
-    position: relative;
-    top: 10%;
-    padding: 4px;
-    width: 240px;
-}
-
-.ok {
-    padding: 5px;
-    width: 96px;
-    border: 2px solid white;
-    background: linear-gradient(to bottom, rgb(153, 43, 255), rgb(101, 21, 177));
-    border-radius: 4px;
-    margin-right: 4px;
-    position: relative;
-    top: 10%;
-    left: 3%;
-    color: black;
-    cursor: pointer;
 }
